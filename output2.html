@@ -1,0 +1,92 @@
+<h1>Library Management System</h1><br>
+<br>
+<h2>Description</h2><br>
+The <strong>Library Management System</strong> is a Python-based application designed to manage library resources efficiently. It allows administrators to manage books, users, and transactions, providing an easy-to-use interface for handling library operations.<br>
+<br>
+<h2>Features</h2><br>
+- <strong>User Management</strong>: Add, edit, and remove users from the system.<br>
+- <strong>Book Management</strong>: Add, edit, and remove books. Track availability and borrowing status.<br>
+- <strong>Transaction Management</strong>: Issue and return books, and track transaction history.<br>
+- <strong>Authentication</strong>: Secure login system for both users and administrators.<br>
+- <strong>Database Integration</strong>: All data is stored and managed in a structured SQL database.<br>
+<br>
+<h2>Installation</h2><br>
+<br>
+<h3>Prerequisites</h3><br>
+- Python 3.x<br>
+- MySQL or SQLite<br>
+<br>
+<h3>Setup</h3><ol><br>
+<li></li><br>
+</ol><strong>Clone the repository</strong>:<br>
+   <code></code>`bash<br>
+   git clone https://github.com/yourusername/Library-Management-System.git<br>
+   cd Library-Management-System<br>
+   <code></code>`<br>
+<ol><br>
+<li></li><br>
+</ol><strong>Install dependencies</strong>:<br>
+   If your project uses any Python packages, install them using:<br>
+   <code></code>`bash<br>
+   pip install -r requirements.txt<br>
+   <code></code>`<br>
+<ol><br>
+<li></li><br>
+</ol><strong>Database setup</strong>:<br>
+   - Create a database using MySQL or SQLite.<br>
+   - Execute the SQL commands in <code>library.sql</code> to set up the necessary tables.<br>
+   - Update the database connection details in <code>conn.py</code>.<br>
+<ol><br>
+<li></li><br>
+</ol><strong>Run the application</strong>:<br>
+   Start the main application by running:<br>
+   <code></code>`bash<br>
+   python main.py<br>
+   <code></code>`<br>
+<br>
+<h2>Usage</h2><br>
+- <strong>Admin</strong>: Use the admin credentials to log in and manage users, books, and transactions.<br>
+- <strong>User</strong>: Users can log in to view their borrowed books, due dates, and manage their profiles.<br>
+<br>
+<h2>File Structure</h2><br>
+\<code>\</code>\`<br>
+Library-Management-System/<br>
+│<br>
+├── Library-Management-System/<br>
+│   ├── admin.py          <h1>Admin functionalities</h1><br>
+│   ├── conn.py           <h1>Database connection settings</h1><br>
+│   ├── login.py          <h1>Login functionalities</h1><br>
+│   ├── main.py           <h1>Entry point of the application</h1><br>
+│   ├── user.py           <h1>User functionalities</h1><br>
+│   ├── library.sql       <h1>SQL file to set up the database</h1><br>
+│   └── README.md         <h1>Project documentation</h1><br>
+│<br>
+├── .git/                 <h1>Version control folder</h1><br>
+└── __pycache__/          <h1>Compiled Python files</h1><br>
+\<code>\</code>\`<br>
+<br>
+<h2>Database Schema</h2><br>
+The database consists of the following tables:<br>
+- <strong>Users</strong>: Stores user details (ID, Name, Email, Password, etc.)<br>
+- <strong>Books</strong>: Stores book details (ID, Title, Author, ISBN, Availability, etc.)<br>
+- <strong>Transactions</strong>: Tracks book issues and returns (Transaction ID, User ID, Book ID, Issue Date, Return Date)<br>
+<br>
+For detailed schema, refer to the <code>library.sql</code> file.<br>
+<br>
+<h2>Contributing</h2><br>
+Contributions are welcome! Please follow these steps to contribute:<ol><br>
+<li></li><br>
+</ol>Fork the repository.<ol><br>
+<li></li><br>
+</ol>Create a new branch (<code>git checkout -b feature-branch</code>).<ol><br>
+<li></li><br>
+</ol>Make your changes.<ol><br>
+<li></li><br>
+</ol>Commit your changes (<code>git commit -m 'Add some feature'</code>).<ol><br>
+<li></li><br>
+</ol>Push to the branch (<code>git push origin feature-branch</code>).<ol><br>
+<li></li><br>
+</ol>Open a pull request.<br>
+<br>
+<h2>License</h2><br>
+This project is licensed under the MIT License. See the <code>LICENSE</code> file for details.<br>
